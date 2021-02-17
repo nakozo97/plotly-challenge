@@ -42,7 +42,7 @@ The dataset mentioned above reveals that a small handful of microbial species (a
 
 6. Updated all of the plots so that any time a new sample is selected it will link to its respective plotly dataset Test Subject ID No.. 
 
-![hw](Images/hw02.png)
+![hw](Images/dashboard_alex.png)
 
 ## Deployment
 
