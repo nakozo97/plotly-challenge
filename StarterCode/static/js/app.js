@@ -100,7 +100,6 @@ function init() {
 
     Plotly.newPlot("bubble", bubbleData, layout2)
 
-
 }
 
 init();
@@ -131,16 +130,20 @@ var panel = Object.entries(metadata).forEach(([key, value]) => {
 // Link getData to Test Subject Id No. on "change".
 // When the button is changed, run the update function 
 
-d3.selectAll("#selDataset").on("change", optionChanged);
+d3.selectAll("#selDataset").on("change", updatePlotly);
 
-function optionChanged() {
+function updatePlotly() {
     var dropdownMenu = d3.select("#selDataset");
     var selectedOption = dropdownMenu.node().value;
+        console.log(selectedOption)
+
     var newdata = importedData
     newdata = newdata.filter(x => x.otu_ids = selectedOption)
 
-    updatePlotly(newdata)
+    updatePlotly(newdata);
+
 };
+
 
 // function update(importedData) {
 
@@ -148,6 +151,7 @@ function optionChanged() {
 //     var selectedOption = d3.select(this).property("value")
 //     update(selectedOption)
 //     })}
+
 
 
 //This closes the top d3 json; last item.     
