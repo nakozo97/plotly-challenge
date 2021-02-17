@@ -1,6 +1,6 @@
 # Plot.ly Homework - Belly Button Biodiversity
 
-![Bacteria by filterforge.com](Images/bacteria.jpg)
+![Bacteria by filterforge.com](Images/Bacteria_0307_1280.jpg)
 
 In this assignment, I built an interactive flask dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
@@ -32,7 +32,7 @@ The dataset mentioned above reveals that a small handful of microbial species (a
 
 * Used `otu_labels` for the text values. <importedData.samples[0].otu_labels;>
 
-![Bubble Chart](Images/bubble_chart.png)
+![Bubble Chart](Images/bubble_chart2.png)
 
 4. Displayed the sample metadata, i.e., an individual's demographic information by Test Subject ID No..
 
