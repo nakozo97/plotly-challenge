@@ -46,7 +46,7 @@ The dataset mentioned above reveals that a small handful of microbial species (a
 
 ## Deployment
 
-* App was deployed using Cross-Origin Resource Sharing (Cors) flask application. To utilize documents, please use localhost 800. <python -m http.server>
+* App was deployed using Cross-Origin Resource Sharing (Cors) flask application. To utilize documents and script, please use localhost:8000 on your localhost browser. <python -m http.server>
 
 ### About the Data
 

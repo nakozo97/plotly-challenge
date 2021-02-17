@@ -131,13 +131,13 @@ var panel = Object.entries(metadata).forEach(([key, value]) => {
 // Link getData to Test Subject Id No. on "change".
 // When the button is changed, run the update function 
 
-d3.selectAll("#selDataset").on("change", getDa
+d3.selectAll("#selDataset").on("change", optionChanged);
 
-function getData() {
+function optionChanged() {
     var dropdownMenu = d3.select("#selDataset");
     var selectedOption = dropdownMenu.node().value;
     var newdata = importedData
-    newdata = newdata.filter(x.ID = selectedOption)
+    newdata = newdata.filter(x => x.otu_ids = selectedOption)
 
     updatePlotly(newdata)
 };
