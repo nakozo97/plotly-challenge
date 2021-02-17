@@ -131,7 +131,7 @@ var panel = Object.entries(metadata).forEach(([key, value]) => {
 // Link getData to Test Subject Id No. on "change".
 // When the button is changed, run the update function 
 
-d3.selectAll("#selDataset").on("change", getData);
+d3.selectAll("#selDataset").on("change", getDa
 
 function getData() {
     var dropdownMenu = d3.select("#selDataset");
